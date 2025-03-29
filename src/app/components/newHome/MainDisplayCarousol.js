@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Carousel } from 'rsuite';
+
+// import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
 export function MainDisplayCarousel() {
   const displayBanner = [
@@ -45,16 +47,19 @@ export function MainDisplayCarousel() {
   };
 
   return (
-    <Slider {...settings} className="product-carousel">
+    <Carousel
+      autoplay
+      style={{
+        height: '100vh',
+      }}
+    >
       {displayBanner.map(data => (
         <a
           key={data.id}
-          style={
-            {
-              // border: 'solid 2px red',
-              // background: 'transparent',
-            }
-          }
+          style={{
+            // border: 'solid 2px red',
+            background: 'transparent',
+          }}
           className=" h-sec1-carousel dis-flex"
           href="#"
         >
@@ -68,6 +73,6 @@ export function MainDisplayCarousel() {
           </div>
         </a>
       ))}
-    </Slider>
+    </Carousel>
   );
 }
