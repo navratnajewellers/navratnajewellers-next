@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://navratnajewellers.in
+
+# Sitemaps
+Sitemap: https://navratnajewellers.in/sitemap.xml
