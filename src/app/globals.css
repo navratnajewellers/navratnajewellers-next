@@ -24,3 +24,253 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+@import './styles/gold-price.css';
+@import './styles/GoldCoin.css';
+@import './styles/Cart.css';
+@import './styles/allProduct.css';
+@import './styles/dashboard.css';
+
+/* remove margin coming from default */
+body {
+  margin: 0;
+  /* background-color: rgb(244, 244, 244) !important; */
+  position: relative;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textStart {
+  text-align: start;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.dis-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-jc-start {
+  justify-content: flex-start;
+}
+
+.flex-jc-end {
+  justify-content: flex-end;
+}
+
+.dis-block {
+  display: block;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-none-imp {
+  display: none !important;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.margin-t5 {
+  margin-top: 5px;
+}
+
+.margin-b5 {
+  margin-bottom: 5px;
+}
+
+.margin-t10 {
+  margin-top: 10px;
+}
+
+.margin-b10 {
+  margin-bottom: 10px;
+}
+
+.margin-t20 {
+  margin-top: 20px;
+}
+
+.margin-b20 {
+  margin-bottom: 20px;
+}
+
+.margin-t30 {
+  margin-top: 30px;
+}
+
+.margin-b30 {
+  margin-bottom: 30px;
+}
+
+.margin-b60 {
+  margin-bottom: 60px;
+}
+
+.margin-t100 {
+  margin-top: 100px;
+}
+
+.margin-b100 {
+  margin-bottom: 100px;
+}
+
+.margin-t50 {
+  margin-top: 50px;
+}
+
+.margin-b50 {
+  margin-bottom: 50px;
+}
+
+.text-cursive {
+  font-family: cursive;
+}
+
+.height-width-100 {
+  height: 100%;
+  width: 100%;
+}
+
+.height-width-full {
+  height: 98vh;
+  width: 98vw;
+}
+
+.padding-l10 {
+  padding-left: 10px;
+}
+
+.padding-t10 {
+  padding-top: 10px;
+}
+
+.padding-lr5 {
+  padding: 0 5%;
+}
+
+.modal-custom-header {
+  position: relative;
+}
+
+.modal-custom-header h4 {
+  padding-bottom: 2px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.modal-custom-header button {
+  top: 2px !important;
+}
+
+/* Google Fraunces font */
+
+.fraunces-font {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    'SOFT' 0,
+    'WONK' 0;
+}
+
+.main-color {
+  color: palevioletred;
+}
+
+.color-green {
+  color: rgb(55, 193, 55);
+}
+
+.color-blue {
+  color: #1675e0;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-gold {
+  color: gold;
+}
+
+.loader-default-container {
+  width: 100%;
+  height: 300px;
+}
+
+/* breadcrumb container */
+.breadcrumb-container {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+/* disable default Link style */
+.dis-link-style {
+  text-decoration: none !important;
+  color: black;
+}
+
+.dis-link-style:hover {
+  color: black;
+}
+
+.fixed-header {
+  background-color: #ffffff;
+}
+
+/* search product autofill container */
+/* and inputpicker popup in drawer */
+.rs-picker-popup {
+  z-index: 9999 !important;
+}
+
+.default-remove-a:hover {
+  text-decoration: none !important;
+}
+
+/* ease transition */
+.custom-trans-all {
+  transition: all 0.3s ease;
+}
