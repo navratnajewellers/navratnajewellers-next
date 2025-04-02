@@ -1,5 +1,6 @@
-import '../../globals.css';
-import '../../styles/Home.css';
+// import '../../globals.css';
+// import '../../styles/Home.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: 'Product | Navratna Jewellers',

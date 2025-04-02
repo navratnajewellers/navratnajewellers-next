@@ -407,15 +407,33 @@ const Header = () => {
 
   const handleSearch = () => {
     // navigate(`/shop/${searchData}`);
-    router.push(`/shop/${searchData}`);
+    // router.push(`/shop/${searchData}`);
+    // window.location.href = `/shop/${searchData}`;
     // window.location.href = `http://localhost:5173/#/shop/${searchData}`;
+
+    const productLink = productData.find(item =>
+      item.name.includes(searchData)
+    );
+
+    // console.log({ productLink });
+    // alert(`/shop/${productLink.link}`);
+
+    window.location.href = `/shop/${productLink.link}`;
   };
 
   // fire on select option
   const handleSearchOptionSelect = searchText => {
     // console.log(value);
     // navigate(`/shop/${searchText}`);
-    router.push(`/shop/${searchText}`);
+    // router.push(`/shop/${searchText}`);
+    const productLink = productData.find(item =>
+      item.name.includes(searchData)
+    );
+
+    // console.log({ productLink });
+    // alert(`/shop/${productLink.link}`);
+
+    window.location.href = `/shop/${productLink.link}`;
   };
 
   const handleForgotPassword = () => {
@@ -595,7 +613,8 @@ const Header = () => {
                   <Nav.Item
                     key={data.product_id}
                     as="a"
-                    href={`/shop/${data.name}`}
+                    // href={`/shop/${data.name}`}
+                    href={`/shop/${data.link}`}
                     className="desktop-menu-item"
                   >
                     <span className="fraunces-font">{data.name}</span>
@@ -641,7 +660,8 @@ const Header = () => {
                   <Nav.Item
                     key={data.product_id}
                     as="a"
-                    href={`/shop/${data.name}`}
+                    // href={`/shop/${data.name}`}
+                    href={`/shop/${data.link}`}
                     className="desktop-menu-item"
                   >
                     <span className="fraunces-font">{data.name}</span>
@@ -859,41 +879,12 @@ const Header = () => {
                             key={data.product_id}
                             eventKey={data.product_id}
                             as="a"
-                            href={`/shop/${data.name}`}
+                            // href={`/shop/${data.name}`}
+                            href={`/shop/${data.link}`}
                           >
                             <span className="fraunces-font">{data.name}</span>
                           </Nav.Item>
                         ))}
-                      {/* <Nav.Item eventKey="2-1" as={Link} to="/gold-coin/1">
-                        1 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-2" as={Link} to="/gold-coin/2">
-                        2 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-3" as={Link} to="/gold-coin/4">
-                        4 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-4" as={Link} to="/gold-coin/5">
-                        5 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-5" as={Link} to="/gold-coin/8">
-                        8 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-6" as={Link} to="/gold-coin/10">
-                        10 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-7" as={Link} to="/gold-coin/25">
-                        25 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-8" as={Link} to="/gold-coin/30">
-                        30 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-9" as={Link} to="/gold-coin/50">
-                        50 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="2-10" as={Link} to="/gold-coin/100">
-                        100 GRAM
-                      </Nav.Item> */}
                     </Nav.Menu>
                     <Nav.Menu
                       eventKey="3"
@@ -907,41 +898,12 @@ const Header = () => {
                             key={data.product_id}
                             eventKey={data.product_id}
                             as="a"
-                            href={`/shop/${data.name}`}
+                            // href={`/shop/${data.name}`}
+                            href={`/shop/${data.link}`}
                           >
                             <span className="fraunces-font">{data.name}</span>
                           </Nav.Item>
                         ))}
-                      {/* <Nav.Item eventKey="3-1" as={Link} to="/silver-coin/1">
-                        1 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-2" as={Link} to="/silver-coin/2">
-                        2 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-3" as={Link} to="/silver-coin/4">
-                        4 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-4" as={Link} to="/silver-coin/5">
-                        5 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-5" as={Link} to="/silver-coin/8">
-                        8 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-6" as={Link} to="/silver-coin/10">
-                        10 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-7" as={Link} to="/silver-coin/25">
-                        25 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-8" as={Link} to="/silver-coin/30">
-                        30 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-9" as={Link} to="/silver-coin/50">
-                        50 GRAM
-                      </Nav.Item>
-                      <Nav.Item eventKey="3-10" as={Link} to="/silver-coin/100">
-                        100 GRAM
-                      </Nav.Item> */}
                     </Nav.Menu>
                     <Nav.Menu
                       eventKey="4"
