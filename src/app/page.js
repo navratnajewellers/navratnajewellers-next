@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useScroll, useMotionValueEvent } from 'motion/react';
 import { Button, Carousel, Panel } from 'rsuite';
 import ProductCarousel from './components/newHome/ProductCarousel';
@@ -16,6 +16,12 @@ import { useWebStatus } from './context/status.context';
 import { MainDisplayCarousel } from './components/newHome/MainDisplayCarousol';
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const { scrollY } = useScroll(); // Framer Motion scroll tracking
   const [direction, setDirection] = useState('Idle');
   const [lastScroll, setLastScroll] = useState(0);
@@ -32,6 +38,8 @@ export default function Home() {
   // console.log({ direction, lastScroll });
 
   const { isWebsiteOnUpdate } = useWebStatus();
+
+  if (!mounted) return null; // Prevent rendering on the server
 
   return isWebsiteOnUpdate ? (
     <div>

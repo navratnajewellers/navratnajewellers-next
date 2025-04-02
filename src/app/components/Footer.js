@@ -72,7 +72,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="/page/ahout-us">About Navratna Jewellers</a>
+                    <a href="/page/about-us">About Navratna Jewellers</a>
                   </li>
                   <li>
                     <a href="/page/privacy-policy">Privacy Policy</a>
@@ -175,7 +175,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/page/ahout-us">About Navratna Jewellers</a>
+                <a href="/page/about-us">About Navratna Jewellers</a>
               </li>
               <li>
                 <a href="/page/privacy-policy">Privacy Policy</a>
