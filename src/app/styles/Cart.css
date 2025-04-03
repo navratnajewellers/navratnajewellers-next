@@ -24,7 +24,7 @@
 .order-summary-table,
 .order-summary-table tr,
 .order-summary-table td {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .cart-product-container {
